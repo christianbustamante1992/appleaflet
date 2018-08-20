@@ -1,0 +1,7 @@
+{
+  "name": "mapaopenstreepmap",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
