@@ -28,7 +28,7 @@ export class HomePage {
     }).addTo(this.mapa);
     this.mapa.locate({
       setView: true,
-      maxZoom: 5
+      maxZoom: 17
     }).on('locationfound', (e) => {
       let markerGroup = Leaflet.featureGroup();
       let marker: any = Leaflet.marker([e.latitude, e.longitude]).on('click', () => {
@@ -52,6 +52,7 @@ export class HomePage {
       ],
       routeWhileDragging: true,
       showAlternatives: true,
+      //geocoder: Leaflet.Control.Geocoder.nominatim()
     }).addTo(this.mapa).hide();
 
   }
